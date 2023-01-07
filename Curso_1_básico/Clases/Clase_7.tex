@@ -1,0 +1,117 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[left=2.54cm, right=2.54cm, top=2.54cm, bottom=2.54cm]{geometry}
+\author{Juan Carlos Tapia}
+\title{Figuras}
+\begin{document}
+\maketitle
+\tableofcontents
+\listoffigures
+\listoftables
+
+\section{width}
+\subsection{Centrado}
+\begin{center}
+\includegraphics[width=5cm]{logik}
+\end{center}
+
+\subsection{A la izquierda}
+\begin{flushleft}
+\includegraphics[width=5cm]{logik}
+\end{flushleft}
+
+
+\subsection{A la Derecha}
+\begin{flushright}
+\includegraphics[width=5cm]{logik}
+\end{flushright}
+
+
+\section{height}
+\subsection{Centrado}
+\begin{center}
+\includegraphics[height=5cm]{logik}
+\end{center}
+
+
+\subsection{A la izquierda}
+\begin{flushleft}
+\includegraphics[height=5cm]{logik}
+\end{flushleft}
+
+\subsection{A la Derecha}
+\begin{flushright}
+\includegraphics[height=5cm]{logik}
+\end{flushright}
+\section{height}
+
+\section{scale}
+\subsection{Centrado}
+\begin{center}
+\includegraphics[scale=0.35]{logik}
+\end{center}
+
+
+\subsection{A la izquierda}
+\begin{flushleft}
+\includegraphics[scale=0.35]{logik}
+\end{flushleft}
+
+
+\subsection{A la izquierda}
+\begin{flushright}
+\includegraphics[scale=0.35]{logik}
+\end{flushright}
+
+\section{Título de la imagen}
+
+\begin{figure}[h]
+%\begin{center}
+\includegraphics[width=7cm]{logik}
+\caption{Logo de {\bf Logik}}
+%\end{center}
+\end{figure}
+
+\begin{tabular}{c|c|c}
+\hline 
+Imagen dentro de una tabla & \includegraphics[width=2cm]{logik} & \includegraphics[width=2cm]{UNPRG}\\ [0.5cm]\hline
+\end{tabular}
+
+\begin{figure}[h!]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline \\ [0.2cm]
+\includegraphics[width=2cm]{logik} & \includegraphics[width=2cm]{UNPRG} \\  \hline 
+\end{tabular}
+\caption{Ejemplo}
+\end{center}
+\end{figure}
+
+\section{Rotación}
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=6cm,angle=-45 ]{logik}\\
+\caption{Giro de -45°}
+\includegraphics[width=6cm,angle=45 ]{logik}\\
+\caption{Giro de 45°}
+\includegraphics[width=6cm,angle=90 ]{logik}\\
+\caption{Giro de 90°}
+\includegraphics[width=6cm,angle=180 ]{logik}\\
+\caption{Giro de 180°}
+\includegraphics[width=6cm,angle=270 ]{logik}\\
+\caption{Giro de 270°}
+\end{center}
+\end{figure}
+
+
+
+
+\end{document}

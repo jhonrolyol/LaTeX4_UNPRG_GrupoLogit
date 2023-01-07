@@ -1,0 +1,121 @@
+\documentclass[11pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{ragged2e}
+\usepackage[spanish]{babel}
+\usetheme{Madrid}
+%\definecolor{trueblue}{rgb}{0.0,0.45,0.81}
+\definecolor{alizarin}{rgb}{0.82, 0.1, 0.26}
+\usecolortheme[named=alizarin]{structure}
+\begin{document}
+\justifying
+\author{Juan Carlos Tapia}
+\title{Mi primer documento en \LaTeX}
+%\subtitle{}
+\logo{\includegraphics[width=1.5cm]{logik}}
+\institute[UNPRG]{Universidad Nacional Pedro Ruiz Gallo}
+%\date{}
+%\subject{}
+%\setbeamercovered{transparent}
+%\setbeamertemplate{navigation symbols}{}
+\begin{frame}[plain]
+\maketitle
+\end{frame}
+
+\begin{frame}{Contenido}
+\tableofcontents
+\end{frame}
+
+\section{Velos}
+
+\begin{frame}{Título de la página}
+\framesubtitle{Subtítulo}
+\lipsum[1]
+\end{frame}
+
+
+\begin{frame}{Velos}
+Texto
+\begin{enumerate}[<+->]
+\item Libiton
+\item Justin
+\item Luis
+\item Anderson
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Velos}  %<i->
+Texto
+\begin{enumerate}
+\item<1-> Uno
+\item<2-> Dos
+\item<4-> Cuatro
+\item<3-> Tres
+\item<2-> Dos
+\end{enumerate}
+\end{frame}
+\section{Comando pause}
+
+\begin{frame}{Comando pause}
+
+Texto 1\\ \pause
+Texto 2 \\ \pause
+Texto 3\\
+Texto 4 \\
+\end{frame}
+
+
+\section{Cajas}
+
+\begin{frame}{Blocks}
+Texto
+\begin{block}{Título}
+\begin{center}
+Esta es una caja
+\end{center}
+\end{block}
+\end{frame}
+
+\section{Ecuaciones}
+
+\begin{frame}{Ecuaciones}
+\begin{block}{Ecuación}
+$$a^2 +b^2 =c^2$$
+\end{block}
+\end{frame}
+
+\section{figuras}
+
+\begin{frame}{Figuras}
+\begin{center}
+\includegraphics[width=5cm]{logik}
+\end{center}
+\end{frame}
+
+\section{Tablas}
+\begin{frame}{Tablas}
+\begin{table}[t]
+\begin{center}
+\begin{tabular}{| r | l | c |}
+\hline
+Fruta & Cantidad & Origen \\ \hline
+Manzana & 4 & Estados Unidos \\
+Naranja & 10 & España \\
+Plátano & 3 & Colombia \\ \hline
+\end{tabular}
+\caption{Fruta disponible}
+\label{tab:fruta}
+\end{center}
+\end{table}
+\end{frame}
+
+
+\section{Liga}
+\begin{frame}{Ligas}
+\href{https://manualdelatex.com/}{\includegraphics[width=3cm]{LATEX}}
+\end{frame}
+
+\end{document}

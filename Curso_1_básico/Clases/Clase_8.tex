@@ -1,0 +1,159 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%\renewcommand{\theenumi}{\arabic{enumi}}
+%\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\theenumi}{\Alph{enumi}}
+\renewcommand{\theenumii}{\roman{enumii}}
+\renewcommand{\theenumiii}{\arabic{enumiii}}
+\usepackage[left=2.54cm, right=2.54cm, top=2.54cm, bottom=2.54cm]{geometry}
+\author{Juan Carlos Tapia}
+\title{Lista y enumeraciones}
+\begin{document}
+\maketitle
+\section{itemize}
+Alumnos del curso taller mi primer documento en \LaTeX.
+\begin{itemize}
+\item Abel
+\item Jhon
+\item Andrés
+\item Giovanni
+\end{itemize}
+
+
+\section{enumerate}
+Alumnos del curso taller mi primer documento en \LaTeX.
+\begin{enumerate}
+\item Abel
+\item Jhon
+\item Andrés
+\item Giovanni
+\end{enumerate}
+
+\section{Otros casos}
+Alumnos del curso taller mi primer documento en \LaTeX.
+\begin{itemize}
+\item Abel
+\begin{enumerate}
+\item Edad
+\item Celular
+\item Correo
+\end{enumerate}
+\item Jhon
+\begin{enumerate}
+\item Edad
+\item Celular
+\item Correo
+\end{enumerate}
+\item Andrés
+\begin{enumerate}
+\item Edad
+\item Celular
+\item Correo
+\end{enumerate}
+\item Giovanni
+\begin{enumerate}
+\item Edad
+\item Celular
+\item Correo
+\end{enumerate}
+\end{itemize}
+
+\begin{enumerate}
+\item Roly 
+\begin{itemize}
+\item Edad
+\item Celular
+\item Correo
+\end{itemize}
+\item Jordy
+\begin{itemize}
+\item Edad
+\item Celular
+\item Correo
+\end{itemize}
+\item Luis
+\begin{itemize}
+\item Edad
+\item Celular
+\item Correo
+\end{itemize}
+\end{enumerate}
+
+
+\section{Cadenas}
+
+\begin{enumerate}
+
+\item Cadena con {\bf enumerate}
+\begin{enumerate}
+
+\item Primer item
+\begin{enumerate}
+\item Primer subitem
+\begin{enumerate}
+\item Primer sub-subitem
+\item Segundo sub-subitem
+\end{enumerate}
+
+\item Segundo subitem
+\begin{enumerate}
+\item Primer sub-subitem
+\end{enumerate}
+\end{enumerate}
+
+\item Segundo item
+\begin{enumerate}
+\item Primer subitem
+\begin{enumerate}
+\item Primer sub-subitem
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\item Cadena con {\bf itemize}
+\begin{itemize}
+\item Primer item
+\begin{itemize}
+\item Primer subitem
+\begin{itemize}
+\item Primer sub-subitem
+\end{itemize}
+\end{itemize}
+
+\item Segundo item
+\begin{itemize}
+\item Primer subitem
+\begin{itemize}
+\item Primer sub-subitem
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\end{enumerate}
+
+\section{Entorno enumerate}
+
+\begin{enumerate}
+\item Abel
+\begin{enumerate}
+\item Edad
+\begin{enumerate}
+\item Edad
+\item Celular
+\item Correo
+\end{enumerate}
+\item Celular
+\item Correo
+\end{enumerate}
+\item Jhon
+\item Andrés
+\item Giovanni
+\end{enumerate}
+
+\end{document}

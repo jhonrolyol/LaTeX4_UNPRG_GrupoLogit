@@ -1,0 +1,140 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[left=2.54cm, right=2.54cm, top=2.54cm, bottom=2.54cm]{geometry}
+\author{Juan Carlos Tapia}
+\title{Tablas}
+\begin{document}
+\maketitle
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline
+Nombres & Edad \\ \hline
+Luis Alfredo & 43 \\ \hline
+Abel Jordy  & 21 \\ \hline
+Kathy Gonzales & 30 \\ \hline
+Juan Carlos & 21 \\ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\begin{table}[t]
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline
+Nombres & Edad \\ \hline
+Superior & 21 \\ \hline
+Luis Alfredo & 43 \\ \hline
+Abel Jordy  & 21 \\ \hline
+Kathy Gonzales & 30 \\ \hline
+Juan Carlos & 21 \\ \hline
+\end{tabular}
+\caption{Tabla superior}
+\end{center}
+\end{table}
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline
+Nombres & Edad \\ \hline
+Here & 21 \\ \hline
+Luis Alfredo & 43 \\ \hline
+Abel Jordy  & 21 \\ \hline
+Kathy Gonzales & 30 \\ \hline
+Juan Carlos & 21 \\ \hline
+\end{tabular}
+\caption{Tabla here}
+\end{center}
+\end{table}
+
+
+\begin{table}[b]
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline
+Nombres & Edad \\ \hline
+Bottom & 21 \\ \hline
+Luis Alfredo & 43 \\ \hline
+Abel Jordy  & 21 \\ \hline
+Kathy Gonzales & 30 \\ \hline
+Juan Carlos & 21 \\ \hline
+\end{tabular}
+\caption{Tabla inferior}
+\end{center}
+\end{table}
+
+
+\begin{table}
+\begin{center}
+\caption{Combinar celdas}
+\vspace{1mm}
+\begin{tabular}{|l|c|c|}
+\hline
+\multicolumn{3}{|c|}{Estudiantes del taller de \LaTeX } \\ \hline
+Nombres & Edad & Celular \\ \hline
+Luis Alfredo & 43 & 101 \\ \hline
+Abel Jordy  & 21 &102\\  \hline
+Kathy Gonzales & 30 &103\\ \hline
+Juan Carlos & 21 &104\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\caption{Combinar celdas}
+\vspace{1mm}
+\begin{tabular}{|l|c|c|}
+\hline
+\multicolumn{3}{|c|}{Estudiantes del taller de \LaTeX } \\ \hline
+Nombres & Edad & Celular \\ \hline
+Luis Alfredo & 43 & 101 \\ \cline{2-3}
+Abel Jordy  & 21 &102\\ \cline{1-2} 
+Kathy Gonzales & 30 &103\\ 
+Juan Carlos & 21 &104\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\begin{table}[h]
+\begin{center}
+\begin{sideways}
+\begin{tabular}{|l|c|c|}
+\hline
+\multicolumn{3}{|c|}{Estudiantes del taller de \LaTeX } \\ \hline
+Nombres & Edad & Celular \\ \hline
+Luis Alfredo & 43 & 101 \\ \cline{2-3}
+Abel Jordy  & 21 &102\\ \cline{1-2} 
+Kathy Gonzales & 30 &103\\ 
+Juan Carlos & 21 &104\\ \hline
+\end{tabular}
+\end{sideways}
+\caption{Rotación}
+\end{center}
+\end{table}
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|
+>{\columncolor[HTML]{EFEFEF}}l |l|l|l|l|}
+\hline
+\multicolumn{5}{|c|}{\cellcolor[HTML]{FFFFC7}\textbf{Alumnos LaTeX}}                      \\ \hline
+\textbf{Nombres} & \textbf{Apellido} & \textbf{Edad} & \textbf{Celular} & \textbf{Correo} \\ \hline
+Alumno 1         &      Tapia             &      21         &                  &                 \\ \hline
+Alumno 2         &         Carvajal          &            21   &                  &                 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{document}

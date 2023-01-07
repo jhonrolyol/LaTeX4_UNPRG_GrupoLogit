@@ -1,0 +1,180 @@
+
+% Preámbulo
+\documentclass[11pt, a4paper]{article}
+
+% Paquetes 
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm, amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[left=2.54cm, right=2.54cm,top = 2.54cm, bottom = 2.54cm ]{geometry}
+\usepackage{xcolor}
+\usepackage{threeparttable}
+\usepackage{nicematrix}
+\usepackage{booktabs}
+
+
+% Colores
+\definecolor{rojo1}{rgb}{0.82, 0.1, 0.26}
+\definecolor{verde1}{rgb}{0.0, 1.0, 0.5}
+\definecolor{naranja1}{rgb}{1.0, 0.22, 0.0}
+\definecolor{azul1}{rgb}{0.16, 0.32, 0.75}
+\definecolor{violeta1}{rgb}{0.2, 0.2, 0.6}
+\definecolor{violeta2}{rgb}{0.75, 0.0, 1.0}
+\definecolor{amarillo1}{rgb}{1.0, 0.96, 0.0}
+\definecolor{morado1}{rgb}{0.8, 0.0, 0.8}
+
+% Título
+\title{Tablas}
+\author{Jhon Roly Ordoñez Leon}
+\date{\today}
+
+% Docuemnto
+\begin{document}
+    \maketitle
+    \newpage
+    \textcolor{rojo1}{\section{ Tablas de verdad } }
+ 
+    \textcolor{violeta1}{\subsection{\textbf{Negación ($\textcolor{rojo1}{\neg}$)}}}
+    \begin{table}[ht]
+        \begin{center}
+            \caption{Tabla de la negación }
+            \vspace{4mm}
+            \begin{tabular}{c|c}
+                \textcolor{verde1}{A} & $ \textcolor{rojo1}{\neg} \,  \textcolor{verde1}{A} $ \\
+                \hline 
+                \textcolor{naranja1}{V} & \textcolor{azul1}{F}  \\
+                \textcolor{azul1}{F}  & \textcolor{naranja1}{V}
+            \end{tabular}
+        \end{center}
+    \end{table}
+    \textcolor{violeta1}{\subsection{\textbf{Conujnción ($\textcolor{rojo1}{\land}$)}}}
+    \begin{table}[ht]
+        \begin{center}
+            \caption{Tabla de la conjunción}
+            \vspace{4mm}
+        \begin{tabular}{c c| c}
+            \textcolor{verde1}{A} & \textcolor{violeta1}{B} & \textcolor{verde1}{A} $\textcolor{rojo1}{\land} $ \textcolor{violeta1}{B} \\
+            \hline 
+            \textcolor{naranja1}{V} & \textcolor{naranja1}{V} & \textcolor{naranja1}{V} \\
+            \textcolor{naranja1}{V} & \textcolor{azul1}{F}  & \textcolor{azul1}{F} \\
+            \textcolor{azul1}{F}  & \textcolor{naranja1}{V} & \textcolor{azul1}{F} \\
+            \textcolor{azul1}{F} & \textcolor{azul1}{F} & \textcolor{azul1}{F}\\
+        \end{tabular}
+        \end{center}
+    \end{table}
+    \textcolor{violeta1}{\subsection{\textbf{Disyunción ($\textcolor{rojo1}{\lor}$)}}}
+    \begin{table}[ht]
+        
+        \begin{center}
+            \caption{Tabla de la Disyunción}
+            \vspace{4mm}
+            \begin{tabular}{c c| c}
+                \textcolor{verde1}{A} & \textcolor{violeta1}{B} & \textcolor{verde1}{A} $\textcolor{rojo1}{\lor} $ \textcolor{violeta1}{B} \\
+                \hline 
+                \textcolor{naranja1}{V} & \textcolor{naranja1}{V} & \textcolor{naranja1}{V} \\
+                \textcolor{naranja1}{V} & \textcolor{azul1}{F}  & \textcolor{naranja1}{V} \\
+                \textcolor{azul1}{F}  & \textcolor{naranja1}{V} & \textcolor{naranja1}{V} \\
+                \textcolor{azul1}{F} & \textcolor{azul1}{F} & \textcolor{azul1}{F}\\
+            \end{tabular}
+        \end{center}
+    \end{table}
+    \newpage
+    \textcolor{violeta1}{\subsection{\textbf{Condicional ($\textcolor{rojo1}{\rightarrow}$)}}}
+    \begin{table}[ht]
+        \begin{center}
+            \caption{Tabla de la Condicional}
+            \vspace{4mm}
+            \begin{tabular}{c c| c}
+                \textcolor{verde1}{A} & \textcolor{violeta1}{B} & \textcolor{verde1}{A} $\textcolor{rojo1}{\rightarrow} $ \textcolor{violeta1}{B} \\
+                \hline 
+                \textcolor{naranja1}{V} & \textcolor{naranja1}{V} & \textcolor{naranja1}{V} \\
+                \textcolor{naranja1}{V} & \textcolor{azul1}{F}  & \textcolor{azul1}{F} \\
+                \textcolor{azul1}{F}  & \textcolor{naranja1}{V} & \textcolor{naranja1}{V} \\
+                \textcolor{azul1}{F} & \textcolor{azul1}{F} &  \textcolor{naranja1}{V} \\
+            \end{tabular}
+        \end{center}
+    \end{table}
+    
+    \textcolor{violeta1}{\subsection{\textbf{Bicondicional ($\textcolor{rojo1}{\leftrightarrow}$)}}}
+    \begin{table}[ht]
+        \begin{center}
+            \caption{Tabla de la Bicondicional}
+            \vspace{4mm}
+            \begin{tabular}{c c| c}
+                \textcolor{verde1}{A} & \textcolor{violeta1}{B} & \textcolor{verde1}{A} $\textcolor{rojo1}{\leftrightarrow} $ \textcolor{violeta1}{B} \\
+                \hline 
+                \textcolor{naranja1}{V} & \textcolor{naranja1}{V} & \textcolor{naranja1}{V} \\
+                \textcolor{naranja1}{V} & \textcolor{azul1}{F}  & \textcolor{azul1}{F} \\
+                \textcolor{azul1}{F}  & \textcolor{naranja1}{V} &  \textcolor{azul1}{F} \\
+                \textcolor{azul1}{F} & \textcolor{azul1}{F} &  \textcolor{naranja1}{V} \\
+            \end{tabular}
+        \end{center}
+    \end{table}
+    
+    \textcolor{rojo1}{\section{Datos}}
+    \begin{table}[ht]
+        \begin{center}
+            \caption{Tabla de datos}
+            \vspace{4mm}
+            \begin{tabular}{|c|c|c|c|c|c|c|}
+                \hline
+                Azul & Rojo & Verde & Azul & Amarillo & Verde & Morado \\
+                \hline
+                Morado & Azul & Amarillo & Morado & Negro & Blanco & Azul \\
+                \hline
+                Amarillo & Negro &  Rojo & Amarillo & Negro & Rojo & Blanco \\
+                \hline 
+                Azul & Morado & Blanco & Verde & Azul & Blanco & Morado \\
+                \hline
+                 Rojo & Verde & Azul & Negro & Amarillo & Blanco & Negro \\
+                \hline
+            \end{tabular}
+        \end{center}
+    \end{table}
+    
+
+    \newpage
+    %%%%%%%
+    % Cuadro obtenudo de Stack Change \LaTeX
+
+    \makeatletter
+    \AddToHook{env/threeparttable/begin}
+    {\TPT@hookin{NiceTabular}\TPT@hookin{NiceTabular*}}
+    \makeatother
+
+    \begin{table} [htpb]
+        \centering
+        \begin{minipage}[b]{0.9 \textwidth}
+        \centering
+        \begin{threeparttable}[b]
+        \caption{Tabla de frecuencias} 
+        \label{tab:size_shape}
+        \begin{NiceTabular} { p{0.15 \textwidth}  p{0.15 \textwidth} p{0.15 \textwidth} p{0.15 \textwidth} p{0.17 \textwidth}  } 
+        \CodeBefore
+        \arraycolor[gray]{0.5}
+        \Body
+        \toprule
+         \textbf{Color}  &  \textbf{Frecuencia Absoluta }  &  \textbf{Frecuencia Relativa} &  \textbf{Frecuencia porcentual} & \textbf{Frecuencia Acumulada} \\ 
+        \cmidrule{1-5}  \addlinespace
+         \textbf{Negro}    &\, \, \, \, 5 & 0.1429   & 14.29\% & 14.29\% \\ \addlinespace
+         \textbf{\textcolor{blue}{Azul} }    &\, \, \, \, 7  & 0.2000   & 20\% & 34.29\% \\ \addlinespace       
+         \textbf{\textcolor{amarillo1}{Amarillo}}  &\, \, \, \, 5  & 0.1429 & 14.29\% & 48.57\% \\ \addlinespace
+         \textbf{\textcolor{red}{Rojo}}  &\, \, \, \, 4 & 0.1143  & 11.43\% & 60\%  \\ \addlinespace
+         \textbf{\textcolor{green}{Verde}}  &\, \, \, \, 4 &  0.1143     & 11.43\%    & 71.43\% \\ \addlinespace
+         \textbf{\textcolor{morado1}{Morado}}  &\, \, \, \, 5 & 0.1429     & 14.29\%   & 85.71\%   \\ \addlinespace
+         \textbf{\textcolor{white}{Blanco}}  &\, \, \, \, 5 & 0.1429     & 14.29\%   &  100\% \\ \addlinespace
+        \midrule
+        \textbf{Total } &\, \, \, \, 35  & 1 & 100\%  &    \\
+        \bottomrule
+        \end{NiceTabular}
+        \end{threeparttable}
+        \end{minipage}
+        \end{table} 
+
+\end{document}
+
+
